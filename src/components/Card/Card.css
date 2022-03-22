@@ -1,0 +1,42 @@
+.Articulos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(185, 185, 185);
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.contenidoArticulos{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.contenidoArticulos button{
+    margin-top: 30px;
+    width: 180px;
+}
+
+h3{
+    margin: 5px;
+    font-size: 30px;
+}
+
+h4{
+    margin: 5px;
+}
+

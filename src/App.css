@@ -1,0 +1,27 @@
+.catalog{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1{
+    font-size: 40px;
+    display: flex;
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerBar{
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
