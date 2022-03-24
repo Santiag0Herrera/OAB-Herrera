@@ -1,0 +1,21 @@
+.catalog{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    width: 90vw;
+}
+
+.productList{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+}
