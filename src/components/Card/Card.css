@@ -1,19 +1,20 @@
 .Articulos{
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    flex-wrap: wrap;
     align-content: space-around;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: 10px;
     border-radius: 10px;
-    padding: 10px;
     background-color: rgb(185, 185, 185);
+    width: 300px;
+    height: 400px;
+
 }
 
 img{
     width: 200px;
-    height: 200px;
     border-radius: 10px;
 }
 
@@ -24,19 +25,22 @@ img{
     justify-content: center;
     align-items: center;
     padding: 10px;
+    width:270px;
+    text-align: center;
 }
 
 .contenidoArticulos button{
-    margin-top: 30px;
+    margin-top: 5px;
     width: 180px;
+    height: 30px;
 }
 
-h3{
+h2{
     margin: 5px;
     font-size: 30px;
 }
 
-h4{
+h3{
     margin: 5px;
 }
 
