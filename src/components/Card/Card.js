@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import ItemCount from '../ItemCount/ItemCount';
 import './Card.css';
 
