@@ -1,17 +1,20 @@
-import './Card.css'
+import React, {useState, useEffect} from 'react';
+import ItemCount from '../ItemCount/ItemCount';
+import './Card.css';
 
-const card = ({title, description, price})=>{
+export default function Card ({data}){
+    const {title, description, image, price} = data;
+
     return(
         <div className='Articulos'>
             <h2>{title}</h2>
-            <img src='https://www.educaciontrespuntocero.com/wp-content/uploads/2019/02/girasoles-978x652.jpg'></img>
+            <img src= {image} ></img>
             <div className='contenidoArticulos'>
                 <p>{description}</p>
-                <p>Precio: ${price}</p>
+                <h3>Precio: ${price}</h3>
+                <ItemCount/>
                 <button>Comprar</button>
             </div>
         </div>
-    )
-}
-
-export default card;
+    );
+};

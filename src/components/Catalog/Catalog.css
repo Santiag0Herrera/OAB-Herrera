@@ -3,11 +3,12 @@
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     overflow-y: hidden;
     overflow-x: scroll;
     width: 90vw;
+    padding: 20px;
 }
 
 .productList{
