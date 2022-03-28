@@ -1,5 +1,5 @@
 import Card from '../Card/Card';
-import './Catalog.css';
+import './ItemListContainer.css';
 
 const prodCatalog = ({children}) => {
     let dataProduct ={

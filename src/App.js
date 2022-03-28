@@ -1,6 +1,6 @@
 import NavBar from "./components/NavBar/NavBar"
 import Footer from "./components/Footer/Footer"
-import Catalog from "./components/Catalog/Catalog"
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import './App.css'
 const App= () => {
   return (
@@ -11,13 +11,13 @@ const App= () => {
 
       <div className='body'>
         <h1>Nuestros Productos</h1>
-        <Catalog>
+        <ItemListContainer>
           <p> Oferta </p>
-        </Catalog>
+        </ItemListContainer>
 
-        <Catalog>
+        <ItemListContainer>
           <p> Lo mas nuevo </p>
-        </Catalog>
+        </ItemListContainer>
       </div>
 
       <div>
