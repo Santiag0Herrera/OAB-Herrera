@@ -11,13 +11,7 @@ const App= () => {
 
       <div className='body'>
         <h1>Nuestros Productos</h1>
-        <ItemListContainer>
-          <p> Oferta </p>
-        </ItemListContainer>
-
-        <ItemListContainer>
-          <p> Lo mas nuevo </p>
-        </ItemListContainer>
+        <ItemListContainer/>
       </div>
 
       <div>

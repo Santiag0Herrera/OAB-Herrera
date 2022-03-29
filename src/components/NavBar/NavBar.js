@@ -7,10 +7,12 @@ import CartWidget from '../CartWidget/CartWidget';
 function NavBar(){
     return(
         <div className="header">
-            <div className="leftItem">
+            <div className="leftItems">
                 <a href='...'><MenuIcon fontSize='large'/></a>
+                <h1>OAB</h1>
             </div>
             <ul className="rightItems">
+                
                 <CartWidget/>
                 <li><a href="..."><InfoIcon fontSize='medium'/></a></li>
                 <li><a href="..."><AccountCircleIcon fontSize='large'/></a></li>

@@ -4,7 +4,6 @@ import './Card.css';
 
 export default function Card ({data}){
     const {title, description, image, price} = data;
-
     return(
         <div className='Articulos'>
             <h2>{title}</h2>

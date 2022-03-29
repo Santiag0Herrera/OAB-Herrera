@@ -1,6 +1,6 @@
 .header{
     display: flex;
-    background-color: rgb(15, 32, 49);
+    background-color: rgb(29, 29, 29);
     height: 100px;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -8,6 +8,9 @@
     color: white;
     justify-content: space-between;
     padding: 0px 10px;
+    position: fixed;
+    top:0 !important;
+    width: 100vw;
 }
 
 .rightItems{
@@ -25,5 +28,21 @@ a{
 }
 
 a:hover{
-    color: rgb(4, 68, 133);
+    color: rgb(80, 80, 80);
+}
+
+.leftItems{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+}
+
+h1{
+    font-size: 30px !important; 
+    margin: 10px;
+    padding: 0px !important;
 }

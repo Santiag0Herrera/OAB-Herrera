@@ -1,9 +1,9 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import './ItemCount.css';
 
-
 const ItemCount = () =>{
-    const [ count, setCount ] = useState(0);
+
+    const [count, setCount] = useState(0);
     const addProd = () =>{
         setCount(count +1);
     };
@@ -13,6 +13,8 @@ const ItemCount = () =>{
             setCount(count -1);
         };
     };
+
+
     return(
         <div>
             <div className='quantityButtons'>
