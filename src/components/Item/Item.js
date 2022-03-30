@@ -1,9 +1,9 @@
 import React from 'react';
 import ItemCount from '../ItemCount/ItemCount';
-import './Card.css';
+import './Item.css';
 
 export default function Card ({data}){
-    const {title, description, image, price} = data;
+    const {title, description, image, price, stock} = data;
     return(
         <div className='Articulos'>
             <h2>{title}</h2>
@@ -11,7 +11,8 @@ export default function Card ({data}){
             <div className='contenidoArticulos'>
                 <p>{description}</p>
                 <h3>Precio: ${price}</h3>
-                <ItemCount/>
+                <h3>Stock Disponible: {stock}</h3>
+                <ItemCount stock={stock}/>
                 <button>Comprar</button>
             </div>
         </div>

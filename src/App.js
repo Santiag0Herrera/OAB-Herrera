@@ -10,7 +10,7 @@ const App= () => {
       </div>
 
       <div className='body'>
-        <h1>Nuestros Productos</h1>
+        <h2>Nuestros Productos</h2>
         <ItemListContainer/>
       </div>
 

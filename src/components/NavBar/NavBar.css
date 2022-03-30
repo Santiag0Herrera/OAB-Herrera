@@ -8,9 +8,8 @@
     color: white;
     justify-content: space-between;
     padding: 0px 10px;
-    position: fixed;
+    position: relative;
     top:0 !important;
-    width: 100vw;
 }
 
 .rightItems{
@@ -43,6 +42,11 @@ a:hover{
 
 h1{
     font-size: 30px !important; 
-    margin: 10px;
+    margin-top: 10px;
     padding: 0px !important;
+}
+
+h2{
+    margin: 0px !important;
+    margin-top: 50px !important;
 }
