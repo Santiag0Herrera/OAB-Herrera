@@ -8,13 +8,10 @@ const App= () => {
       <div className="headerBar">
         <NavBar/>
       </div>
-
       <div className='body'>
         <h2>Nuestros Productos</h2>
         <ItemListContainer/>
-      </div>
-
-      <div>
+        <br></br><div><br></br></div><br></br>
         <Footer/>
       </div>
     </div>
