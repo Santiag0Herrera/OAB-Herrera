@@ -9,7 +9,6 @@
     border-radius: 5px;
     background-color: rgb(66, 66, 66);
     width: 250px;
-    height: 600px;
     color: white;
     box-shadow: 5px 5px 6px #00000066;
 }
@@ -39,7 +38,7 @@ img{
 }
 
 h2{
-    margin: 15px;
+    margin: 15px !important;
     font-size: 30px;
 }
 
@@ -52,6 +51,10 @@ h3{
     flex-direction: row;
     justify-content: center;
 }
+.quantityButtons :hover{
+    background-color: rgb(228, 228, 228) !important;
+    color: rgb(66, 66, 66) !important;
+}
 
 .countButton{
     margin: 5px;
@@ -63,3 +66,17 @@ h3{
     align-items: center;
 }
 
+.BuyDetailButtons{
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.BuyDetailButtons button{
+    margin: 5px;
+    border: none;
+    border-radius: 3px;
+}

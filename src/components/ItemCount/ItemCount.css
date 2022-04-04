@@ -1,0 +1,19 @@
+.quantityButtons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: rgb(66, 66, 66);
+    border-radius: 5px;
+    width: 200px
+}
+
+.quantityButtons button{
+    box-shadow: 1.5px 1.5px 1.5px #00000066 !important;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    margin: 0px 20px 0px 20px !important;
+}

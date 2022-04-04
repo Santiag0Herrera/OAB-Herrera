@@ -1,0 +1,65 @@
+.ProductDetail{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color: rgb(66, 66, 66);
+    border-radius: 10px;
+    box-shadow: 5px 5px 6px #00000066;
+    margin: 10px;
+    color: white;
+    width: 650px;
+}
+
+.ProductDetail img{
+    height: 350px;
+    min-width: 300px;
+    margin: 10px;
+}
+
+.ProductDetailList{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.ProductDetailContent{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 10px 10px 10px 0px;
+}
+
+.ProductDetailContent button{
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.ProductDetailContent h2{
+    margin: 0px !important;
+}
+
+.buttonsSection{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.buyButton :hover{
+    background-color: rgb(228, 228, 228) !important;
+    color: rgb(66, 66, 66) !important;
+}

@@ -17,13 +17,13 @@ const ItemCount = (props) =>{
 
 
     return(
-        <div>
-            <h3>Cant elegida: {count}</h3>
+        <>
             <div className='quantityButtons'>
-                <button className='countButton' onClick={addProd}>+</button>
                 <button className='countButton' onClick={removProd}>-</button>
+                <h3>{count}</h3>
+                <button className='countButton' onClick={addProd}>+</button>
             </div>
-        </div>
+        </>
         
     )
 }
