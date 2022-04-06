@@ -8,7 +8,7 @@
     color: white;
     justify-content: space-between;
     padding: 0px 10px;
-    position: relative;
+    position: sticky;
     top:0 !important;
 }
 
@@ -37,13 +37,14 @@ a:hover{
     align-content: center;
     justify-content: space-around;
     align-items: center;
-    padding: 0px;
+    padding: 5px;
 }
 
 h1{
     font-size: 30px !important; 
     margin-top: 10px;
     padding: 0px !important;
+    text-decoration: none;
 }
 
 h2{

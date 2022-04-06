@@ -8,8 +8,10 @@
     justify-content: center;
     align-items: center;
     color: white;
-    width: 100vw;
-    margin-top: 10px;
+    width: 100vw !important;
+    margin-top: 100px;
+    position: relative;
+    bottom: 0;
 }
 
 .icons{

@@ -1,0 +1,22 @@
+.trumpError{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+
+.trumpError img{
+    height: 300px;
+    width: 300px;
+}
+
+.trumpError h1{
+    margin-top: 50px;
+}
+
+.trumpError h4{
+    font-size: large;
+    font-style: italic;
+}
