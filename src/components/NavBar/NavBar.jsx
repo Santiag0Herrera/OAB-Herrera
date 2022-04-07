@@ -13,10 +13,15 @@ function NavBar(){
                 <li className='Title'><Link to={"/"}><img src="http://assets.stickpng.com/images/58430e1ea6515b1e0ad75b56.png"></img></Link></li>
             </ul>
 
+            <ul className="categories">
+                <li><Link to={"/category/Pileta"} >Articulos para Pileta</Link></li>
+                <li><Link to={"/category/Electricos"} >Articulos Electricos</Link></li>
+                <li><Link to={"/category/Cava"} >Nuestra Cava</Link></li>
+            </ul>
+
             <ul className="rightItems">
-                <li><Link to={"/dfghdfgh"}  style={{textDecoration: 'none'}}>Error 404</Link></li>
                 <li><Link to={"/cart"} style={{textDecoration: 'none'}}><CartWidget/></Link></li>
-                <li><Link to={'/info'} style={{textDecoration: 'none'}}><InfoIcon fontSize='medium'/></Link></li>
+                <li><Link to={"/info"} style={{textDecoration: 'none'}}><InfoIcon fontSize='medium'/></Link></li>
                 <li><Link to={"/account"} style={{textDecoration: 'none'}}><AccountCircleIcon fontSize='large'/></Link></li>
             </ul>
         </div>

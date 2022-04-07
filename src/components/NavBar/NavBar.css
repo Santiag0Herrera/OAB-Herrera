@@ -63,3 +63,12 @@ h2{
 .leftItems li{
     margin: 5px !important;
 }
+
+.categories{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}

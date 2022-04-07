@@ -10,6 +10,9 @@ import Info from "./Pages/Info/Info";
 import Cart from "./Pages/Cart/Cart";
 import Account from "./Pages/Account/Account";
 import Productos from "./Pages/Productos/Productos";
+import Pileta from "./Pages/Pileta/Pileta";
+import Electricos from "./Pages/Electricos/Electricos";
+import Cava from "./Pages/Cava/Cava";
 //Style
 import './App.css';
 
@@ -30,6 +33,9 @@ const App= () => {
         <Route path="/cart" element ={<Cart/>}/>
         <Route path="/Item/:id" element ={<Productos/>}/>
         <Route path="/account" element ={<Account/>}/>
+        <Route path="/category/Pileta" element ={<Pileta/>}/>
+        <Route path="/category/Electricos" element ={<Electricos/>}/>
+        <Route path="/category/Cava" element ={<Cava/>}/>
           {/* {pokemons.map((pokemon) => (
             <div>{pokemon.name}</div>
           ))} */}

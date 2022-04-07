@@ -4,10 +4,9 @@ import {useParams} from 'react-router-dom';
 import Catalog from "../../Catalog";
 
 const Productos = () => {
-    const { id } = useParams(); 
+    const {id} = useParams(); 
     const [producto, setProduct] = useState([]);
     const ProductosCatalog = Catalog;
-    console.log(ProductosCatalog)
     console.log("Id de ruta: ", id); //sirve para poder indicarle el Id de que producto queremos la Info, segun el id de la pagina en la que estamos.
 
     useEffect( () => {
