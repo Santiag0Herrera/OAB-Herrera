@@ -5,8 +5,9 @@ import './ItemListContainer.css';
 const ItemListContainer = (prop) => {
     const {greeting} = prop;
     return(
-        <>
-            <h3>{greeting}</h3>
+        <>  <div className="ProductSection">
+                <h3>{greeting}</h3>
+            </div>
             <ItemList/>
         </>
     )

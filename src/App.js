@@ -28,7 +28,7 @@ const App= () => {
         <Route path="*" element={<ErrorPage/>}/>
         <Route path="/info" element ={<Info/>}/>
         <Route path="/cart" element ={<Cart/>}/>
-        <Route path="/productos/:id" element ={<Productos/>}/>
+        <Route path="/Item/:id" element ={<Productos/>}/>
         <Route path="/account" element ={<Account/>}/>
           {/* {pokemons.map((pokemon) => (
             <div>{pokemon.name}</div>

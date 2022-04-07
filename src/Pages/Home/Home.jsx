@@ -1,11 +1,14 @@
 import React from "react";
 import ItemListContainer from "../../components/ItemListContainer/ItemListContainer";
+import './Home.css';
 
 const HomePage = () =>{
     return(
         <>
-            <h2>Nuestros Productos!</h2>
-            <ItemListContainer greeting="¡Lo ultimo en nuestro Catalogo!"/>
+            <div className="ProductSection">
+                <h2>Nuestros Productos!</h2>
+            </div>
+                <ItemListContainer greeting="¡Lo ultimo en nuestro Catalogo!"/>
         </>
     )
 };

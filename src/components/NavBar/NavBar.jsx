@@ -10,14 +10,14 @@ function NavBar(){
         <div className="header">
             <ul className="leftItems">
                 <li><a href='...'><MenuIcon fontSize='large'/></a></li>
-                <li className='Title'><Link to={"/"}><h1>OAB</h1></Link></li>
+                <li className='Title'><Link to={"/"}><img src="http://assets.stickpng.com/images/58430e1ea6515b1e0ad75b56.png"></img></Link></li>
             </ul>
 
             <ul className="rightItems">
-                <li><Link to={"/dfghdfgh"}>Error 404</Link></li>
-                <li><Link to={"/cart"}><CartWidget/></Link></li>
-                <li><Link to={'/info'}><InfoIcon fontSize='medium'/></Link></li>
-                <li><Link to={"/account"}><AccountCircleIcon fontSize='large'/></Link></li>
+                <li><Link to={"/dfghdfgh"}  style={{textDecoration: 'none'}}>Error 404</Link></li>
+                <li><Link to={"/cart"} style={{textDecoration: 'none'}}><CartWidget/></Link></li>
+                <li><Link to={'/info'} style={{textDecoration: 'none'}}><InfoIcon fontSize='medium'/></Link></li>
+                <li><Link to={"/account"} style={{textDecoration: 'none'}}><AccountCircleIcon fontSize='large'/></Link></li>
             </ul>
         </div>
     )

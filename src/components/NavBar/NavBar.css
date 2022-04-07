@@ -37,7 +37,8 @@ a:hover{
     align-content: center;
     justify-content: space-around;
     align-items: center;
-    padding: 5px;
+    padding: 0px;
+    margin: 5px;
 }
 
 h1{
@@ -50,4 +51,15 @@ h1{
 h2{
     margin: 0px !important;
     margin-top: 50px !important;
+}
+
+.leftItems img{
+    width: 80px !important;
+    height:80px !important;
+    margin: 0px;
+    padding: 0px;
+}
+
+.leftItems li{
+    margin: 5px !important;
 }
