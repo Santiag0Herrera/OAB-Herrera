@@ -4,6 +4,13 @@ import './Item.css';
 
 export default function Card ({data}){
     const {title, description, image, price, stock, id} = data;
+    //funcitons
+    const addToCart = (e) =>{
+        console.log("Agrego al Carrito")
+    }
+
+
+
     return(
         <div className='Articulos'>
             <h2>{title}</h2>
@@ -12,7 +19,7 @@ export default function Card ({data}){
                 <h3>${price}</h3>
                 <h3>Stock Disponible: {stock}</h3>
                 <div class="BuyDetailButtons">
-                    <button>Comprar</button>
+                    <button onClick={addToCart}>Comprar</button>
                     <Link to={`/Item/${id}`} style={{textDecoration: 'none'}}><button>Detalles</button></Link>
                 </div>
             </div>            
