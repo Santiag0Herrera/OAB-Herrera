@@ -3,11 +3,11 @@ import ItemCount from '../ItemCount/ItemCount';
 import './ItemDetail.css'
 const ItemDetail = ({data},countAct) => {
     const {title, description, image, price, stock} = data;
-    const [count, setCount] = useState(0)
+    // const [count, setCount] = useState(0)
 
-    useEffect(()=>{
-        setCount(countAct)
-    })
+    // useEffect(()=>{
+    //     setCount(countAct)
+    // })
     
     return(
         <>
@@ -19,11 +19,11 @@ const ItemDetail = ({data},countAct) => {
                     <p>{description}</p>
                     <h3>Precio: ${price}</h3>
                     <h3>Stock Disponible: {stock}</h3>
-                    <h3>Cantitad Agregada: {count}</h3>
+                    {/* <h3>Cantitad Agregada: {count}</h3> */}
                     
                 </div>
                 <div className="buttonsSection">
-                    <ItemCount stock={stock} action={count}/>
+                    <ItemCount stock={stock}/>
                     <button className="buyButton">Comprar</button>
                 </div>
                 
