@@ -1,25 +1,21 @@
 .header{
+    width: 100%;
     display: flex;
-    background-color: rgb(29, 29, 29);
-    height: 100px;
+    height: 130px;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
     color: white;
     justify-content: space-between;
-    padding: 0px 10px;
-    position: sticky;
-    top:0 !important;
+    padding: 0px 0px;
+    position: fixed;
+    background: linear-gradient(180deg, rgba(29,29,29,1) 0%, rgba(29,29,29,0.5) 66%, rgba(29,29,29,0) 100%);
+    z-index: 1000;
+    margin: 0;
 }
 
-.rightItems{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0px;
+.header li{
+    width: 100px;
 }
 
 a{
@@ -28,17 +24,6 @@ a{
 
 a:hover{
     color: rgb(80, 80, 80);
-}
-
-.leftItems{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0px;
-    margin: 5px;
 }
 
 h1{
@@ -53,22 +38,11 @@ h2{
     margin-top: 50px !important;
 }
 
-.leftItems img{
+img{
     width: 80px !important;
     height:80px !important;
     margin: 0px;
     padding: 0px;
 }
 
-.leftItems li{
-    margin: 5px !important;
-}
 
-.categories{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-}
