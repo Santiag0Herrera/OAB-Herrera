@@ -4,19 +4,20 @@
     align-items: center;
     flex-direction: column;
     align-content: center;
+    color: white;
 }
-
 
 .trumpError img{
-    height: 300px;
-    width: 300px;
+    height: 300px !important;
+    width: 300px !important;
 }
 
-.trumpError h1{
-    margin-top: 50px;
+.trumpError h3{
+    margin: 50px !important;
+    font-size: 50px;
 }
 
 .trumpError h4{
     font-size: large;
-    font-style: italic;
+    font-style: italic normal;
 }

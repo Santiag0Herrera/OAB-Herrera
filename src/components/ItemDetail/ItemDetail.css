@@ -14,9 +14,10 @@
 }
 
 .ProductDetail img{
-    height: auto;
-    width: auto;
+    height: max-content !important;
+    width: auto !important;
     margin: 10px;
+    border-radius: 10px 0px 0px 10px;
 }
 
 .ProductDetailList{

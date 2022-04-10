@@ -6,7 +6,7 @@
     flex-wrap: nowrap;
     align-items: center;
     color: white;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 0px 0px;
     position: fixed;
     background: linear-gradient(180deg, rgba(29,29,29,1) 0%, rgba(29,29,29,0.5) 66%, rgba(29,29,29,0) 100%);
@@ -15,11 +15,14 @@
 }
 
 .header li{
-    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 a{
     color: white;
+    text-decoration: none;
 }
 
 a:hover{
@@ -27,10 +30,11 @@ a:hover{
 }
 
 h1{
-    font-size: 30px !important; 
-    margin-top: 10px;
+    font-size: 100px !important; 
+    margin: 0px;
     padding: 0px !important;
     text-decoration: none;
+    color: white;
 }
 
 h2{
@@ -39,8 +43,8 @@ h2{
 }
 
 img{
-    width: 80px !important;
-    height:80px !important;
+    width: 40px !important;
+    height:50px !important;
     margin: 0px;
     padding: 0px;
 }

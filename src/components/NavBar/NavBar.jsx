@@ -4,19 +4,24 @@ import MenuIcon from '@mui/icons-material/Menu';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import InfoIcon from '@mui/icons-material/Info';
 import CartWidget from '../CartWidget/CartWidget';
+import LightIcon from '@mui/icons-material/Light';
+import Start from "../../components/Start/Start";
+import WineBarIcon from '@mui/icons-material/WineBar';
+import PoolIcon from '@mui/icons-material/Pool';
 import {Link} from 'react-router-dom';
 function NavBar(){
     return(
         <>
             <ul className="header">
-                <li><Link to={"/category/Pileta"}>Para Pileta</Link></li>
-                <li><Link to={"/category/Electricos"}>Electricos</Link></li>
-                <li><Link to={"/category/Cava"}>Vinos</Link></li>
-                <li className='Title'><Link to={"/"}><img src="http://assets.stickpng.com/images/58430e1ea6515b1e0ad75b56.png"></img></Link></li>
+                <li><Link to={"/category/Pileta"}><PoolIcon/></Link></li>
+                <li><Link to={"/category/Electricos"}>< LightIcon/></Link></li>
+                <li><Link to={"/category/Cava"}><WineBarIcon/></Link></li>
+                <li className='logo'><Link to={"/"}><img src="https://logodownload.org/wp-content/uploads/2013/12/apple-logo-4.png"></img></Link></li>
                 <li><Link to={"/cart"} style={{textDecoration: 'none'}}><CartWidget/></Link></li>
                 <li><Link to={"/info"} style={{textDecoration: 'none'}}><InfoIcon fontSize='medium'/></Link></li>
                 <li><Link to={"/account"} style={{textDecoration: 'none'}}><AccountCircleIcon fontSize='large'/></Link></li>
             </ul>
+            <Start/>
         </>
     )
 }

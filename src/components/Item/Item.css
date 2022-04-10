@@ -14,9 +14,9 @@
     height: 400px;
 }
 
-img{
-    width: 150px;
-    height: 150px;
+.Articulos img{
+    width: 150px !important;
+    height: 150px !important;
     border-radius: 10px;
 }
 
