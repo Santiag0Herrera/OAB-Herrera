@@ -51,6 +51,12 @@
     margin: 0px !important;
 }
 
+.ProductDetailContent h3{
+    display: block;
+    font-size: 20px !important;
+    margin: 10px 0px !important;
+}
+
 .buttonsSection{
     display: flex;
     flex-direction: column;

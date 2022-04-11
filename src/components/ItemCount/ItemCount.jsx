@@ -20,7 +20,7 @@ const ItemCount = (props) =>{
         <>
         <div className='quantityButtons'>
             <button className='countButton' onClick={removProd}>-</button>
-            <h3>{count}</h3>
+            <h3 style={{color:"black", fontSize:"20px"}}>{count}</h3>
             <button className='countButton' onClick={addProd}>+</button>
         </div>
         <button onClick={() => props.onAdd(count)}>Agregar al Carrito</button>
