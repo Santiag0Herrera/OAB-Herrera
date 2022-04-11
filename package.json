@@ -1,5 +1,5 @@
 {
-  "homepage": "https://santiag0herrera.github.io/RectProyect/",
+  "homepage": "https://santiag0herrera.github.io/OAB-Herrera/",
   "name": "ecommerce-react",
   "version": "0.1.0",
   "private": true,
@@ -21,7 +21,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predepoly": "npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
