@@ -44,9 +44,11 @@ h2{
     text-decoration: none;
 }
 
-h3{
-    margin: 5px;
-    text-decoration: none;
+.contenidoArticulos h3{
+    margin: 5px !important;
+    text-decoration: none !important;
+    display: block;
+    font-size: 15px;
 }
 
 .quantityButtons{
