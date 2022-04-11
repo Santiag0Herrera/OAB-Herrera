@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/OAB-Herrera/static/css/main.dc1d8941.css",
-    "main.js": "/OAB-Herrera/static/js/main.e049cc74.js",
-    "static/media/fondo.mp4": "/OAB-Herrera/static/media/fondo.3e507b10788a266e028f.mp4",
-    "index.html": "/OAB-Herrera/index.html",
-    "main.dc1d8941.css.map": "/OAB-Herrera/static/css/main.dc1d8941.css.map",
-    "main.e049cc74.js.map": "/OAB-Herrera/static/js/main.e049cc74.js.map"
+    "main.css": "/static/css/main.dc1d8941.css",
+    "main.js": "/static/js/main.5dc4341e.js",
+    "static/media/fondo.mp4": "/static/media/fondo.3e507b10788a266e028f.mp4",
+    "index.html": "/index.html",
+    "main.dc1d8941.css.map": "/static/css/main.dc1d8941.css.map",
+    "main.5dc4341e.js.map": "/static/js/main.5dc4341e.js.map"
   },
   "entrypoints": [
     "static/css/main.dc1d8941.css",
-    "static/js/main.e049cc74.js"
+    "static/js/main.5dc4341e.js"
   ]
 }
