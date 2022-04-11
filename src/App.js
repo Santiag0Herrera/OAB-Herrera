@@ -17,12 +17,6 @@ import Cava from "./Pages/Cava/Cava";
 import './App.css';
 
 const App= () => {
-  // const [pokemons, setPokemons] = useState([])
-  // useEffect(() => {
-  //   fetch('https://pokeapi.co/api/v2/pokemon?limit=10&offset=200')
-  //     .then((response) => response.json())
-  //     .then((data) => setPokemons(data.results))
-  // })
   return (
     <BrowserRouter>
         <NavBar className="headerBar"/>
@@ -36,9 +30,6 @@ const App= () => {
         <Route path="/category/Pileta" element ={<Pileta/>}/>
         <Route path="/category/Electricos" element ={<Electricos/>}/>
         <Route path="/category/Cava" element ={<Cava/>}/>
-          {/* {pokemons.map((pokemon) => (
-            <div>{pokemon.name}</div>
-          ))} */}
       </Routes>
       <Footer/>
     </BrowserRouter>

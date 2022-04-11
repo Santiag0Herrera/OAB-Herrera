@@ -5,7 +5,7 @@ import './Info.css';
 const Info = () => {
     return(
         <>
-            <h1>Info Page</h1>
+            <h3>Info Page</h3>
         </>
     )
 }

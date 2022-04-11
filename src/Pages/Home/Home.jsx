@@ -4,9 +4,11 @@ import './Home.css';
 
 const HomePage = () =>{
     return(
-        <div className="Inicio">
+        <>
+            <div className="Inicio">
                 <ItemListContainer greeting="¡Lo ultimo en nuestro Catalogo!"/>
-        </div>
+            </div>
+        </>
     )
 };
 

@@ -7,16 +7,7 @@ const start = () => {
     return( 
         <>
         <div className='startImage'>
-            <video autoPlay loop muted style={{
-                position: "absolute",
-                width: "100%",
-                height:"100%",
-                objectFit: "cover",
-                zIndex: "-1",
-                top: "0"
-            }}>
-                <source src={BackgroundVideo} type="video/mp4"/>
-            </video>
+            <img src='https://media.staticontent.com/media/pictures/0929c4be-08f9-41f7-8090-58b15a72f380'></img>
             <div className='MainTitle'>
                 <h1>OAB</h1>
                 <p>Tenemos lo que necesitas y lo que no tambien!</p>

@@ -69,3 +69,11 @@
     display: flex;
     justify-content: space-around;
 }
+
+.quantities button{
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    color: white;
+    background-color: #292929;
+    box-shadow: 1px 1px 15px #ffffff41;
+}

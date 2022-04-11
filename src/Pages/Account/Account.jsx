@@ -5,7 +5,7 @@ import './Account.css';
 const Account = () => {
     return(
         <>
-            <h1>Account Page</h1>
+            <h3>Account Page</h3>
         </>
     )
 }

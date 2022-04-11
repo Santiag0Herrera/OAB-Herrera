@@ -9,9 +9,7 @@ const ItemList = () => {
     // Promise con useEffect que devuelve los productos de ItemList.
     const getProducts = () => {
         return new Promise ((resolve, reject)=>{
-            setTimeout(()=>{
-                return resolve(Catalog);
-            }, 2000);//A los 2 seg "resolve" devuelve los valores de ItemList,
+            return resolve(Catalog);
         })
     }
     //El useEffect (se ejecuta despues de que se renderiza) llamada a la promesa de "getProducts" y con el ".then" devuelve "data" = obj del array "ItemList".
