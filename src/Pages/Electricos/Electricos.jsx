@@ -12,19 +12,26 @@ const Electricos = () => {
         filterProductByCategory(ProductosCatalog);
     },[Count]);
 
-    const filterProductByCategory = () => {
-        return ProductosCatalog.map( (productCat) =>{
+    const filterProductByCategory = (state) => {
+        const products = []
+        state.map( (productCat) =>{
             if(productCat.category == "electricos"){
-                setProductCategory(productCat)
+                products.push(productCat)
                 Count = Count+1;
             };
         });
+        setProductCategory(products)
     };
 
     return(
         <>
             <div className="ContainerDetail">
-                <Item data={productoCategory}/>
+                {
+                    productoCategory? productoCategory.map((data) => (
+                        <Item data= {data}/>
+                    )):
+                    <div></div>
+                }
             </div>
         </>
     )

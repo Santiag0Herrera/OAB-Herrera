@@ -15,24 +15,28 @@ import Electricos from "./Pages/Electricos/Electricos";
 import Cava from "./Pages/Cava/Cava";
 //Style
 import './App.css';
+//context
+import { ThemeProvider } from "./context/ThemeContext";
 
 const App= () => {
   return (
-    <BrowserRouter>
-        <NavBar className="headerBar"/>
-      <Routes>
-        <Route path="/" element={<HomePage/>}/>
-        <Route path="*" element={<ErrorPage/>}/>
-        <Route path="/info" element ={<Info/>}/>
-        <Route path="/cart" element ={<Cart/>}/>
-        <Route path="/Item/:id" element ={<Productos/>}/>
-        <Route path="/account" element ={<Account/>}/>
-        <Route path="/category/Pileta" element ={<Pileta/>}/>
-        <Route path="/category/Electricos" element ={<Electricos/>}/>
-        <Route path="/category/Cava" element ={<Cava/>}/>
-      </Routes>
-      <Footer/>
-    </BrowserRouter>
+    <ThemeProvider>
+      <BrowserRouter>
+          <NavBar className="headerBar"/>
+        <Routes>
+          <Route path="/" element={<HomePage/>}/>
+          <Route path="*" element={<ErrorPage/>}/>
+          <Route path="/info" element ={<Info/>}/>
+          <Route path="/cart" element ={<Cart/>}/>
+          <Route path="/Item/:id" element ={<Productos/>}/>
+          <Route path="/account" element ={<Account/>}/>
+          <Route path="/category/Pileta" element ={<Pileta/>}/>
+          <Route path="/category/Electricos" element ={<Electricos/>}/>
+          <Route path="/category/Cava" element ={<Cava/>}/>
+        </Routes>
+        <Footer/>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
