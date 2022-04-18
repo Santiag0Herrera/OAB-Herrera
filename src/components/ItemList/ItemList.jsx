@@ -1,9 +1,9 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import Card from '../Item/Item';
 import Catalog from '../../Catalog';
 import './ItemList.css';
 
-const ItemList = () => {    
+const ItemList = () => {  
     //State donde almacenaremos los productos que obtengamos de ItemList (array vacio).
     const [dataProducts, setDataProducts] = useState([]);
     // Promise con useEffect que devuelve los productos de ItemList.

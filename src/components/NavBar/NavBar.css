@@ -52,4 +52,10 @@ img{
     padding: 0px;
 }
 
+.CartWidgetIcon{
+    display: flex !important;
+}
 
+.CartWidgetIcon p{
+    margin: 0px;
+}
