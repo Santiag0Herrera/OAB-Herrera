@@ -6,12 +6,13 @@ const ThemeProvider = ({children}) =>{
     const [lightTheme, setLightTheme] = useState(true)
     
     const handleTheme = () => {
+        setLightTheme(!lightTheme)
         console.log("Se cambio el tema del sitio")
     }
 
     const data = {
         lightTheme,
-        setLightTheme
+        handleTheme
     }
 
     return(

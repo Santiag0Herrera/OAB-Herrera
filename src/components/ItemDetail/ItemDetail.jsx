@@ -1,14 +1,18 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useContext} from "react";
 import ItemCount from '../ItemCount/ItemCount';
 import {Link} from 'react-router-dom';
+import CartContext from '../../context/CartContext';
 import './ItemDetail.css'
-const ItemDetail = ({data},countAct) => {
+const ItemDetail = ({data}) => {
     const {title, description, image, price, stock} = data;
     const [cart, setCart] = useState({});
-
+    const {cartProducts, addProductToCart} = useContext(CartContext)
+    console.log("Productos en el carrito: ", cartProducts)
     //funcion del padre ejecutada por el hijo
-    const onAdd= () =>{
+    const onAdd = () =>{
         setCart(data);
+        addProductToCart(data);
+        console.log(data)
     }
     /////////////////////////////////////////
     return(
@@ -24,6 +28,8 @@ const ItemDetail = ({data},countAct) => {
                         { //condicional 
                             cart.id?
                             <div className='quantities'>
+                                <div><Link to={`/`}><button>Ver mas productos</button></Link></div>
+                                
                                 <Link to={`/cart`}><button>Finalizar Compra</button></Link>
                             </div>:
                             <div className="quantities">

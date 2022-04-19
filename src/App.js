@@ -17,10 +17,11 @@ import Cava from "./Pages/Cava/Cava";
 import './App.css';
 //context
 import { ThemeProvider } from "./context/ThemeContext";
+import { CartProvider } from "./context/CartContext";
 
 const App= () => {
   return (
-    <ThemeProvider>
+    <CartProvider><ThemeProvider>
       <BrowserRouter>
           <NavBar className="headerBar"/>
         <Routes>
@@ -36,7 +37,7 @@ const App= () => {
         </Routes>
         <Footer/>
       </BrowserRouter>
-    </ThemeProvider>
+    </ThemeProvider></CartProvider>
   );
 }
 
