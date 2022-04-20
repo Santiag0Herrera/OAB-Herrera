@@ -19,8 +19,8 @@ h3{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: stretch;
-    padding: 20px;
+    align-items: center;
+    padding: 20px 0px;
     width: 100%;
     align-content: center;
     flex-wrap: wrap;

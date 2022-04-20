@@ -5,18 +5,25 @@ const CartContext = createContext();
 const CartProvider = ({children}) => {
     const [cartProducts, setCartProducts] = useState([])
 
-    const addProductToCart = (product) => {
+    const addProductToCart = (product, quantity) => {
         setCartProducts(cartProducts => [...cartProducts, product])
+        console.log(product.quantity)
     }
 
-    const deletFromCart = () => {
-        setCartProducts(cartProducts.filter((product) => product.id !== 1))
+    const deletFromCart = (id) => {
+        const result = cartProducts.slice(el => el.id !== parseInt(id));
+        setCartProducts(result)
+    }
+
+    const clear = () => {
+        setCartProducts([])
     }
 
     const cartData = {
         cartProducts,
         addProductToCart,
-        deletFromCart
+        deletFromCart,
+        clear
     }
     return(
         <CartContext.Provider value={cartData}>

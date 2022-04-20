@@ -7,6 +7,7 @@ const ItemCount = (props) =>{
     function addProd (){
         if (quantity < props.stock){
             setQuantity(quantity + 1);
+            console.log(quantity)
         }
     };
     
