@@ -5,8 +5,7 @@ import './Item.css';
 
 export default function Card ({data}){
     const {title, description, image, price, stock, id} = data;
-    const {cartProducts, addProductToCart} = useContext(CartContext)
-    
+
     return(
         <div className='Articulos'>
             <h2>{title}</h2>

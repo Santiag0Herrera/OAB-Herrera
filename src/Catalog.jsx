@@ -6,7 +6,8 @@ const Catalog = [
         price : '1500',
         image : 'http://d3ugyf2ht6aenh.cloudfront.net/stores/001/047/557/products/cloro-al-90-211-047eddd95e25553f0a16442692487085-640-0.jpg',
         stock: 5,
-        category: 'pileta'
+        category: 'pileta',
+        quantity: 1
 
     },
     {
@@ -16,7 +17,8 @@ const Catalog = [
         price : '860',
         image : 'https://media.istockphoto.com/photos/white-light-switch-in-the-on-position-picture-id136283726?k=20&m=136283726&s=612x612&w=0&h=X8bYit-uXfnPyVCmMQnc4ec19MerGT9MUlOYMCfqM_0=',
         stock: 10,
-        category: 'electricos'
+        category: 'electricos',
+        quantity: 1
     },
     {
         id: '3',
@@ -25,7 +27,8 @@ const Catalog = [
         price : '2080',
         image : 'https://cdn.shopify.com/s/files/1/0215/7051/9140/products/cadus-tupungato-appellation-malbec-2017-vino-cadus-wines-501896_600x.jpg?v=1603925000',
         stock: 45,
-        category: 'cava'
+        category: 'cava',
+        quantity: 1
     },
     {
         id: '4',
@@ -34,7 +37,8 @@ const Catalog = [
         price : '3500',
         image : 'https://www.bael.com.ar/wp-content/uploads/2016/12/cinema-a-contenido.jpg',
         stock: 17,
-        category: 'electricos'
+        category: 'electricos',
+        quantity: 1
     }
 ];
 

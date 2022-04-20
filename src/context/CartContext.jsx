@@ -5,14 +5,18 @@ const CartContext = createContext();
 const CartProvider = ({children}) => {
     const [cartProducts, setCartProducts] = useState([])
 
-    const addProductToCart = (product) => { //ACA SE PASA EL setCartProduct, ya que es la funcion que modifica el valor del state
+    const addProductToCart = (product) => {
         setCartProducts(cartProducts => [...cartProducts, product])
-        console.log(cartProducts.length)
     }
 
-    const cartData = { //ACA SE PASA EL addProductToCart, para que sea ejecutada desde un child
+    const deletFromCart = () => {
+        setCartProducts(cartProducts.filter((product) => product.id !== 1))
+    }
+
+    const cartData = {
         cartProducts,
-        addProductToCart
+        addProductToCart,
+        deletFromCart
     }
     return(
         <CartContext.Provider value={cartData}>

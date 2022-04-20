@@ -5,3 +5,55 @@ h3{
     margin: 25px !important;
     font-size: 30px;
 }
+
+.cartProducts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantityButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 20px;
+    width: 100%;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.quantityButton a{
+    display: flex;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonCart{
+    margin: 10px 0px 0px 0px !important;
+    padding: 0px !important;
+    color: rgba(255, 255, 255, 0.278) !important;
+    background-color: #292929;
+    width: 50%;
+    height: 50px !important;
+    border-radius: 5px !important;
+    border-style:solid !important;
+    border-width: 2px !important;
+    border-color: rgba(255, 255, 255, 0.278) !important;
+    font-size: larger !important;
+    transition: width 0.5s, background-color 0.5s, box-shadow 0.5s !important;
+}
+
+.buttonCart:hover{
+    cursor: pointer !important;
+    width: 90% !important;
+    background-color: white !important;
+    box-shadow: 1px 1px 15px #ffffff !important;
+    color: #292929 !important;
+}
