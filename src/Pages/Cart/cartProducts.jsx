@@ -8,14 +8,14 @@ const CartProductCard = ({data}) => {
     const {deletFromCart} = useContext(CartContext)
 
     const deleteProduct = () => {
-        deletFromCart()
+        deletFromCart(data.id)
     }
 
     return(
         <>
-            <div className='Articulos'>
+            <div className='ArticulosCart'>
                 <h2>{title}</h2>
-                <img src= {image} ></img>
+                <img src= {image} class="itemImage"></img>
                 <div className='contenidoArticulos'>
                     <h3>Precio: ${price}</h3>
                     <h3>Cantidad Agregada: {quantity}</h3>

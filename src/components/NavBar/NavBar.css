@@ -21,6 +21,7 @@
     width: 35px;
     height: 39px;
     margin: 0px;
+    transition: width 0.3s, height 0.3s !important;
 }
 
 a{

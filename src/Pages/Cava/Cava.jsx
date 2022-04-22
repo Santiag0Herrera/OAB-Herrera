@@ -23,7 +23,8 @@ const Cava = () => {
     };
 
     return(
-        <>
+        <>  
+            <h3>Nuestra Bodega</h3>
             <div className="ContainerDetail">
                 {
                     productoCategory? productoCategory.map((data) => (

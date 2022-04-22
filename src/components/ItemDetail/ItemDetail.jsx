@@ -9,9 +9,9 @@ const ItemDetail = ({data}) => {
     const {addProductToCart} = useContext(CartContext)
     //funcion del padre ejecutada por el hijo
     const onAdd = (quantity) =>{
-        setQuantityCart(quantity)
-        console.log(quantityCart)
-        addProductToCart(data)
+        // setQuantityCart(quantity)
+        addProductToCart(data, quantity)
+        console.log(quantity)
     }
     /////////////////////////////////////////
     return(
@@ -23,7 +23,7 @@ const ItemDetail = ({data}) => {
                 <h3>Precio: ${price}</h3>
                 <h3>Stock Disponible: {stock}</h3>
                 <div className="quantities">
-                    <ItemCount stock={stock} onAdd={onAdd} quantity={quantity}/>
+                    <ItemCount stock={stock} onAdd={onAdd}/>
                 </div>
             </div>
         </div>

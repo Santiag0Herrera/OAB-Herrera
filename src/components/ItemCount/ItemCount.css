@@ -25,7 +25,7 @@
     padding: 0px !important;
     color: rgba(255, 255, 255, 0.278) !important;
     background-color: #292929;
-    width: 50%;
+    width: 50% !important;
     height: 50px !important;
     border-radius: 5px !important;
     border-style:solid !important;

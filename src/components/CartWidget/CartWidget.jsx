@@ -6,7 +6,9 @@ const CartWidget = () =>{
     const {cartProducts, addProductToCart} = useContext(CartContext)
     return(
         <div>
-            <li><ShoppingCartIcon fontSize='medium'/><p>{cartProducts.length}</p></li>
+            <ul>
+                <li><ShoppingCartIcon fontSize='medium'/><p>{cartProducts.length}</p></li>
+            </ul>
         </div>
     )
 }

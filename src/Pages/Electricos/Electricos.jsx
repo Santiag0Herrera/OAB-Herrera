@@ -24,7 +24,8 @@ const Electricos = () => {
     };
 
     return(
-        <>
+        <>  
+            <h3>Artefactos de Iluminacion</h3>
             <div className="ContainerDetail">
                 {
                     productoCategory? productoCategory.map((data) => (

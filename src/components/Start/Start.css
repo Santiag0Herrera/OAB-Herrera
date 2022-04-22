@@ -1,6 +1,6 @@
 .startImage{
     display: flex;
-    height: 100vh;
+    height: 60vh;
     width: 100%;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -13,19 +13,24 @@
     position: absolute !important;
     z-index: -1 !important;
     width: 100% !important;
-    height: 100vh !important;
-    object-fit: cover;
-    top: 0;
+    height: 60vh !important;
+    object-fit:cover;
 
 }
 
 .Inicio{
     z-index: -1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .MainTitle{
     display: flex;
-    height: 100%;
+    height: 60vh;
     width: 100%;
     background-color: #292929a4 !important;
     align-content: center;

@@ -25,7 +25,7 @@ function NavBar(){
                 <li><Link to={"/cart"} style={{textDecoration: 'none', padding: '0px'}}><div className='CartWidgetIcon'><CartWidget/></div></Link></li>
                 <li><Link to={"/info"} style={{textDecoration: 'none'}}><InfoIcon fontSize='medium'/></Link></li>
                 <li><Link to={"/account"} style={{textDecoration: 'none'}}><AccountCircleIcon fontSize='large'/></Link></li>
-                <li><ThemeSwitch/></li>
+                {/* <li><ThemeSwitch/></li> */}
             </ul>
             <Start/>
             

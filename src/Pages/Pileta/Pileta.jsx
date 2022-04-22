@@ -25,10 +25,11 @@ const Pileta = () => {
 
     return(
         <>
+            <h3>Productos para la Pileta</h3>
             <div className="ContainerDetail">
                 {
                     productoCategory? productoCategory.map((data) => (
-                        <Item data= {data}/>
+                        <Item data= {data} key={data.id}/>
                     )):
                     <div></div>
                 }
