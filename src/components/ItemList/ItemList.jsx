@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Card from '../Item/Item';
 import Catalog from '../../Catalog';
-import CircularProgress from '@mui/material/CircularProgress';
 import './ItemList.css';
 
 const ItemList = () => {  
@@ -10,11 +9,11 @@ const ItemList = () => {
     const [dataProducts, setDataProducts] = useState([]);
     // Promise con useEffect que devuelve los productos de ItemList.
     const getProducts = () => {
-        return new Promise ((resolve, reject)=>{
+        return new Promise ((resolve)=>{
             return setTimeout( ()=>{
                 resolve(Catalog)
                 setLoading(false)
-            }, 3000)
+            }, 1000)
         })
     }
     //El useEffect (se ejecuta despues de que se renderiza) llamada a la promesa de "getProducts" y con el ".then" devuelve "data" = obj del array "ItemList".
@@ -28,7 +27,7 @@ const ItemList = () => {
     return(
         <div className='productList'>
             {loading ? //Condicional: condicion "loading" o "loading === 'true' " implica si existe o si su valor es "true"
-            (<div class="spinner"></div>)// a ejecutar en caso de verdadera la condicion
+            (<div className="spinner"></div>)// a ejecutar en caso de verdadera la condicion
             :
             (
             <div className="catalog">

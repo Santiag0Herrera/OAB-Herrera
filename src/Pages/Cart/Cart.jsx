@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 import './Cart.css';
 
 const Cart = () => {
-    const {cartProducts, clear} = useContext(CartContext);
-    console.log(cartProducts)
+    const {cartProducts, clear, totalCartItem} = useContext(CartContext);
+    totalCartItem()
     return(
         <>  <h3>Tu carrito</h3>
             {
@@ -17,10 +17,10 @@ const Cart = () => {
                         <h4 style={{color: "white"}}>Tu carrito esta vacio</h4>
                         <Link to={'/'}><button className='buttonCart'>+ PRODUCTOS</button></Link>
                     </div>
-                    
                 </>)
                 :(<>
                     <div className="cartProducts">
+
                     {
                         cartProducts.map( (cartProduct) => {
                             return(
@@ -28,6 +28,10 @@ const Cart = () => {
                             )
                         })
                     }
+
+                    </div>
+                    <div className="cartResume">
+                        <h3>Total: $ {totalCartItem.total}</h3>
                     </div>
                     <div className='quantityButton'>
                         <Link to={'/gracias'}><button className='buttonCart'>Finalizar Compra</button></Link>

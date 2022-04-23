@@ -4,14 +4,13 @@ import {Link} from 'react-router-dom';
 import CartContext from '../../context/CartContext';
 import './ItemDetail.css'
 const ItemDetail = ({data}) => {
-    const {title, description, image, price, stock, quantity} = data;
-    const [quantityCart, setQuantityCart] = useState()
+    const {title, description, image, price, stock} = data;
     const {addProductToCart} = useContext(CartContext)
     //funcion del padre ejecutada por el hijo
     const onAdd = (quantity) =>{
         // setQuantityCart(quantity)
         addProductToCart(data, quantity)
-        console.log(quantity)
+        console.log("cantidad agregada: ", quantity)
     }
     /////////////////////////////////////////
     return(
