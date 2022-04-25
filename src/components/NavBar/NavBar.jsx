@@ -18,9 +18,9 @@ function NavBar(){
     return(
         <>
             <ul className="header">
-                <li><Link to={"/category/Pileta"}><PoolIcon/></Link></li>
-                <li><Link to={"/category/Electricos"}>< LightIcon/></Link></li>
-                <li><Link to={"/category/Cava"}><WineBarIcon/></Link></li>
+                <li><Link to={"/pileta"}><PoolIcon/></Link></li>
+                <li><Link to={"/electricos"}>< LightIcon/></Link></li>
+                <li><Link to={"/cava"}><WineBarIcon/></Link></li>
                 <li className='logo'><Link to={"/"}><img src="https://logodownload.org/wp-content/uploads/2013/12/apple-logo-4.png"></img></Link></li>
                 <li><Link to={"/cart"} style={{textDecoration: 'none', padding: '0px'}}><div className='CartWidgetIcon'><CartWidget/></div></Link></li>
                 <li><Link to={"/info"} style={{textDecoration: 'none'}}><InfoIcon fontSize='medium'/></Link></li>
