@@ -1,10 +1,9 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
-import CartContext from '../../context/CartContext';
 import './Item.css';
 
 export default function Card ({data}){
-    const {title, description, image, price, stock, id} = data;
+    const {title, image, price, stock, id} = data;
 
     return(
         <>

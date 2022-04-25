@@ -6,7 +6,6 @@ const Electricos = () => {
     const [productoCategory, setProductCategory] = useState([]);
     const ProductosCatalog = Catalog;
     let Count = 0;
-    console.log(ProductosCatalog);
 
     useEffect (() =>{
         filterProductByCategory(ProductosCatalog);

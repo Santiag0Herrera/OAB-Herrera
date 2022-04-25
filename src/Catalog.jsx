@@ -56,7 +56,7 @@ const Catalog = [
         title : 'Halo',
         description : 'Luminaria de embutir para lámparas AR 111 de LED, mayormente utilizadas en el realce de detalles de ambiente, como tapices, adornos, cuadros, estatuas, o en locales comerciales para destacar escaparates, o sectores circunscriptos, como lugares de estar, etc',
         price : 14000,
-        image : 'https://www.bael.com.ar/wp-content/uploads/2016/12/halo-4-1.jpg',
+        image : 'https://http2.mlstatic.com/D_NQ_NP_659192-MLA27795028814_072018-O.webp',
         stock: 7,
         category: 'electricos',
         quantity: 1

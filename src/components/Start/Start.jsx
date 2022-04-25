@@ -1,5 +1,4 @@
 import React from 'react';
-import BackgroundVideo from "../video/fondo.mp4";
 import '../../Pages/Home/Home.css';
 import './Start.css'
 

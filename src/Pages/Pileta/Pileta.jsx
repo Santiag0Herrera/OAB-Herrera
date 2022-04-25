@@ -1,39 +1,67 @@
 import React, {useEffect, useState} from "react";
-import Catalog from '../../Catalog';
 import Item from "../../components/Item/Item";
+
+/////////////// FIREBASE //////////////////////////////////////
+import db from '../../firebase'
+import { collection, getDocs } from 'firebase/firestore';
+///////////////////////////////////////////////////////////////
 
 const Pileta = () => {
     const [productoCategory, setProductCategory] = useState([]);
-    const ProductosCatalog = Catalog;
+    // const ProductosCatalog = products;
     let Count = 0;
-    console.log(ProductosCatalog);
+    const [loading, setLoading] = useState(true)
+    const [products, setProducts] = useState([])
+    const getProducts = async () => {
+        const itemsCollection = collection(db, 'Catalog');
+        const productosSnapshot = await getDocs(itemsCollection);
+        const productList = productosSnapshot.docs.map( (doc) => {
+                let product = doc.data()
+                product.id = doc.id
+                console.log(product)
+                return product
+            }
+        )
+        return productList
+    }
+    useEffect( () => {
+        setLoading(true)
+        getProducts().then( (productos) => {
+            setProducts(productos)
+            setLoading(false)
+        })
+    },[]);
 
     useEffect (() =>{
-        filterProductByCategory(ProductosCatalog);
+        filterProductByCategory(products);
     },[Count]);
 
     const filterProductByCategory = (state) => {
-        const products = []
+        const productosFilt = []
         state.map( (productCat) =>{
             if(productCat.category == "pileta"){
-                products.push(productCat)
+                productosFilt.push(productCat)
                 Count = Count+1;
             };
         });
-        setProductCategory(products)
+        setProductCategory(productosFilt)
     };
 
     return(
         <>
-            <h3>Productos para la Pileta</h3>
-            <div className="ContainerDetail">
-                {
-                    productoCategory? productoCategory.map((data) => (
-                        <Item data= {data} key={data.id}/>
-                    )):
-                    <div></div>
-                }
-            </div>
+        <h3>Productos para la Pileta</h3>
+            {   loading ?
+                (<div className="spinner"></div>)
+                :
+                (<div className="ContainerDetail">
+                    {
+                        productoCategory? (productoCategory.map((data) => (
+                            <Item data={data} key={data.id}/>
+                        ))):
+                        (<></>)
+                    }
+                </div>)
+            }
         </>
     ) 
 }

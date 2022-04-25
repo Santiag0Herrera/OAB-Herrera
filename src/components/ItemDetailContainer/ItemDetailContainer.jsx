@@ -1,30 +1,50 @@
 import React, {useState, useEffect} from "react";
 import ItemDetail from '../ItemDetail/ItemDetail';
-import Catalog from "../../Catalog";
+
+/////////////// FIREBASE //////////////////////////////////////
+import db from '../../firebase'
+import { collection, getDocs } from 'firebase/firestore';
+///////////////////////////////////////////////////////////////
 
 const ItemDetailContainer = () => {
-
-    const [productsInfo, setProductsInfo] = useState([]) //useState([]) = array vacio
-    const getProducts = () => {
-            return new Promise ((resolve, reject) => {
-                setTimeout( ()=>{ return resolve(Catalog);} , 2000);
-        });
+    const [loading, setLoading] = useState(true)
+    const [products, setProducts] = useState([])
+    const getProducts = async () => {
+        const itemsCollection = collection(db, 'Catalog');
+        const productosSnapshot = await getDocs(itemsCollection);
+        const productList = productosSnapshot.docs.map( (doc) => {
+                let product = doc.data()
+                product.id = doc.id
+                console.log(product)
+                return product
+            }
+        )
+        return productList
     }
-    useEffect(()=>{
-        getProducts().then((data)=>{
-            setProductsInfo(data);
+    useEffect( () => {
+        setLoading(true)
+        getProducts().then( (productos) => {
+            setProducts(productos)
+            setLoading(false)
         })
-    });
+    },[]);
 
     return(
-        <div className="ProductDetailList">
-            {productsInfo.map((productInfo) => {
-                const {id} = productInfo;
-                return(
-                    <ItemDetail data={productInfo} key={id}/>
-                )
-            })}
-        </div>
+        <>
+            {
+                loading ?
+                (<div className="spinner"></div>)
+                :
+                (<div className="ProductDetailList">
+                    {products.map((product) => {
+                        const {id} = product;
+                        return(
+                            <ItemDetail data={product} key={id}/>
+                        )
+                    })}
+                </div>)
+            }
+        </>
     )
 }
 

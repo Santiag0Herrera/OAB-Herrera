@@ -8,10 +8,10 @@
     margin: 30px;
     border-radius: 5px;
     background-color: rgb(66, 66, 66);
-    width: 250px;
+    width: 270px;
     color: white;
     box-shadow: 5px 5px 6px #00000066;
-    height: 400px;
+    height: 470px;
     transition: background-color 0.2s, box-shadow 0.2s;
 }
 

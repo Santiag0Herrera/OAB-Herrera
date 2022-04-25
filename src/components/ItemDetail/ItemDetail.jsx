@@ -1,11 +1,12 @@
-import React, {useState, useEffect, useContext} from "react";
+import React, { useContext } from "react";
 import ItemCount from '../ItemCount/ItemCount';
-import {Link} from 'react-router-dom';
 import CartContext from '../../context/CartContext';
 import './ItemDetail.css'
+
 const ItemDetail = ({data}) => {
     const {title, description, image, price, stock} = data;
     const {addProductToCart} = useContext(CartContext)
+    console.log(data)
     //funcion del padre ejecutada por el hijo
     const onAdd = (quantity) =>{
         // setQuantityCart(quantity)
