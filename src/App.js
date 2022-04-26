@@ -8,12 +8,7 @@ import HomePage from "./Pages/Home/Home";
 import ErrorPage from "./Pages/Error/Error404";
 import Info from "./Pages/Info/Info";
 import Cart from "./Pages/Cart/Cart";
-import Account from "./Pages/Account/Account";
 import Productos from "./Pages/Productos/Productos";
-import Pileta from "./Pages/Pileta/Pileta";
-import Electricos from "./Pages/Electricos/Electricos";
-import Cava from "./Pages/Cava/Cava";
-//Style
 import './App.css';
 //context
 import { ThemeProvider } from "./context/ThemeContext";
@@ -30,7 +25,6 @@ const App= () => {
           <Route path="/info" element ={<Info/>}/>
           <Route path="/cart" element ={<Cart/>}/>
           <Route path="/Item/:id" element ={<Productos/>}/>
-          <Route path="/account" element ={<Account/>}/>
           <Route path="/:category/" element ={<HomePage/>}/>
         </Routes>
         <Footer/>

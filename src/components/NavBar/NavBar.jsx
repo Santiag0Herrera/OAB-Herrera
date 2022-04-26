@@ -1,6 +1,5 @@
 import {useContext} from 'react'
 import './NavBar.css'
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import InfoIcon from '@mui/icons-material/Info';
 import CartWidget from '../CartWidget/CartWidget';
 import LightIcon from '@mui/icons-material/Light';
@@ -9,7 +8,6 @@ import WineBarIcon from '@mui/icons-material/WineBar';
 import PoolIcon from '@mui/icons-material/Pool';
 import {Link} from 'react-router-dom';
 import ThemeContext from '../../context/ThemeContext';
-import ThemeSwitch from './ThemeSwitch';
 
 
 function NavBar(){
@@ -18,14 +16,16 @@ function NavBar(){
     return(
         <>
             <ul className="header">
-                <li><Link to={"/pileta"}><PoolIcon/></Link></li>
-                <li><Link to={"/electricos"}>< LightIcon/></Link></li>
-                <li><Link to={"/cava"}><WineBarIcon/></Link></li>
-                <li className='logo'><Link to={"/"}><img src="https://logodownload.org/wp-content/uploads/2013/12/apple-logo-4.png"></img></Link></li>
-                <li><Link to={"/cart"} style={{textDecoration: 'none', padding: '0px'}}><div className='CartWidgetIcon'><CartWidget/></div></Link></li>
-                <li><Link to={"/info"} style={{textDecoration: 'none'}}><InfoIcon fontSize='medium'/></Link></li>
-                <li><Link to={"/account"} style={{textDecoration: 'none'}}><AccountCircleIcon fontSize='large'/></Link></li>
-                {/* <li><ThemeSwitch/></li> */}
+                <div className='NavGroup'>
+                    <li className='logo'><Link to={"/"}><img src="https://logodownload.org/wp-content/uploads/2013/12/apple-logo-4.png"></img></Link></li>
+                    <li><Link to={"/cart"} style={{textDecoration: 'none', padding: '0px'}}><div className='CartWidgetIcon'><CartWidget/></div></Link></li>
+                    <li><Link to={"/info"} style={{textDecoration: 'none'}}><InfoIcon fontSize='medium'/></Link></li>
+                </div>
+                <div className='NavGroup'>
+                    <li><Link to={"/pileta"}><PoolIcon/></Link></li>
+                    <li><Link to={"/electricos"}>< LightIcon/></Link></li>
+                    <li><Link to={"/cava"}><WineBarIcon/></Link></li>
+                </div>
             </ul>
             <Start/>
             

@@ -6,12 +6,12 @@
     flex-wrap: nowrap;
     align-items: center;
     color: white;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 0px 0px;
     position: fixed;
     background: linear-gradient(180deg, rgba(29,29,29,1) 0%, rgba(29,29,29,0.5) 66%, rgba(29,29,29,0) 100%);
     z-index: 1000;
-    margin: 0;
+    margin: 0px;
 }
 
 .header li{
@@ -63,3 +63,18 @@ img{
     padding: 0px;
     align-items: center;
 }
+
+.NavGroup{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.NavGroup li{
+    margin: 0px 25px;
+}
+
