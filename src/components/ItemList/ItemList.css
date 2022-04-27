@@ -31,10 +31,12 @@
 }
 
 .spinner {
+    margin-bottom: 10%;
     position: relative;
     width: 60px;
     height: 60px;
     border-radius: 50%;
+
 }
 
 .spinner::before,

@@ -1,17 +1,17 @@
 .ArticulosCart{
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
     align-items: center;
-    margin: 30px;
+    margin: 10px;
     border-radius: 5px;
     background-color: rgb(66, 66, 66);
-    width: 270px;
+    width: 80%;
+    height: 250px !important;
     color: white;
     box-shadow: 5px 5px 6px #00000066;
-    height: 470px;
     transition: background-color 0.2s, box-shadow 0.2s;
 }
 
@@ -30,11 +30,57 @@ h3{
 
 .cartProducts{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
     align-items: center;
+}
+
+.cartProductInfo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    margin-right: 0px;
+    height: 100%;
+}
+
+.cartDetail{
+    margin: 0px 0px 0px 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    width: 100%;
+    height: 70%;
+}
+
+.cartProductInfo h3{
+    font-size: 15px !important;
+    height: 100%;
+    margin: 0px !important;
+}
+
+.cartProductInfo h2{
+    margin: 0px !important;
+}
+
+.cartProductInfo p{
+    font-size: 12px !important;
+    width: 90%;
+    margin: 0px !important;
+}
+
+.itemImageCart{
+    height: 100% !important;
+    width: auto !important;
+    border-radius: 10px 0px 0px 10px;
 }
 
 .quantityButton{
@@ -62,7 +108,7 @@ h3{
     padding: 0px !important;
     color: rgba(255, 255, 255, 0.278) !important;
     background-color: #292929;
-    width: 50%;
+    width: 70%;
     height: 50px !important;
     border-radius: 5px !important;
     border-style:solid !important;
@@ -70,11 +116,206 @@ h3{
     border-color: rgba(255, 255, 255, 0.278) !important;
     font-size: larger !important;
     transition: width 0.5s, background-color 0.5s, box-shadow 0.5s !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .buttonCart:hover{
     cursor: pointer !important;
-    width: 60% !important;
+    background-color: white !important;
+    box-shadow: 1px 1px 15px #ffffff !important;
+    color: #292929 !important;
+}
+
+.buttonCartInfo{
+    padding: 0px !important;
+    color: rgba(255, 255, 255, 0.278) !important;
+    background-color: #292929;
+    width: 100px;
+    height: 250px !important;
+    border-radius: 0px 5px 5px 0px !important;
+    border-width: 2px !important;
+    border-color: rgba(255, 255, 255, 0.278) !important;
+    border-style: solid;
+    font-size: larger !important;
+    transition: width 0.5s, background-color 0.5s, box-shadow 0.5s !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonCartInfo:hover{
+    cursor: pointer !important;
+    background-color: white !important;
+    box-shadow: 1px 1px 15px #ffffff !important;
+    color: #292929 !important;
+}
+
+.MuiPaper-root{
+    border-radius: 10px !important;
+    background-color: #292929;
+    border-color: #292929;
+}
+
+.modalForm{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #292929;
+    color: white;
+}
+
+.formInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    margin: 10px 10px 20px 10px;
+    width: 100%;
+}
+
+.formInfo input{
+    margin: 10px;
+    height: 30px;
+    width: 90%;
+}
+
+.send {
+    font-family: inherit;
+    font-size: 20px;
+    background: #292929;
+    color: rgba(255, 255, 255, 0.721);
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    border: solid;
+    border-color: rgba(255, 255, 255, 0.721);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.2s;
+    margin: 10px 0px 0px 0px;
+}
+
+.send span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.5s ease-in-out;
+    width: 50%;
+}
+
+.send svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.send:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.send:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.send:hover span {
+    transform: translateX(5em);
+}
+
+.send:active {
+    transform: scale(0.95);
+}
+
+.send:hover {
+    box-shadow: 1px 1px 15px #ffffff;
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+}
+
+.cartResume{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+
+.cartResumeDetail{
+    display: flex;
+    width: 80% !important;
+    justify-content: flex-end;
+}
+
+.cartResumeDetail h3{
+    margin: 0px !important;
+}
+
+.modalForm p{
+    width: 90%;
+    text-align: center;
+    margin: 10px;
+}
+
+.modalForm img {
+    width: 50% !important;
+    height: auto !important;
+    margin: 15px;
+}
+
+.orderId{
+    display: flex;
+    background-color: #404040;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.buttonCartModal{
+    margin: 15px !important;
+    padding: 0px !important;
+    color: rgba(255, 255, 255, 0.278) !important;
+    background-color: #292929;
+    width: 150px !important;
+    height: 50px !important;
+    border-radius: 5px !important;
+    border-style:solid !important;
+    border-width: 2px !important;
+    border-color: rgba(255, 255, 255, 0.278) !important;
+    font-size: larger !important;
+    transition: width 0.5s, background-color 0.5s, box-shadow 0.5s !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.buttonCartModal:hover{
+    cursor: pointer !important;
     background-color: white !important;
     box-shadow: 1px 1px 15px #ffffff !important;
     color: #292929 !important;

@@ -47,9 +47,8 @@ h2{
 }
 
 img{
-    width: 40px !important;
-    height:50px !important;
-    margin: 0px;
+    width: 100px !important;
+    height:62.5px !important;
     padding: 0px;
 }
 
@@ -71,10 +70,13 @@ img{
     align-content: center;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding: 35px;
 }
 
 .NavGroup li{
     margin: 0px 25px;
 }
 
+.Home{
+    font-size: 50px !important;
+}

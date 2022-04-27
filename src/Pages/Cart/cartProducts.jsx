@@ -4,9 +4,8 @@ import '../../components/Item/Item.css';
 import DeleteIcon from '@mui/icons-material/Delete';
 
 const CartProductCard = ({data}) => {
-    const {title, image, price, quantity} = data;
+    const {title, image, price, quantity, description} = data;
     const {deletFromCart} = useContext(CartContext)
-    let subTotal = 0
 
     const deleteProduct = () => {
         deletFromCart(data.id)
@@ -15,14 +14,17 @@ const CartProductCard = ({data}) => {
     return(
         <>
             <div className='ArticulosCart'>
-                <h2>{title}</h2>
-                <img src= {image} className="itemImage"></img>
-                <div className='contenidoArticulos'>
-                    <h3>Precio: ${price}</h3>
-                    <h3>Cantidad Agregada: {quantity}</h3>
-                    <h3>Subtotal: ${subTotal}</h3>
+                <img src= {image} className="itemImageCart"></img>
+                <div className='cartProductInfo'>
+                    <div className="cartDetail">
+                        <h2>{title}</h2>
+                        <h3>${price} c/u</h3>
+                        <h3>Cantidad Agregada: {quantity}</h3>
+                        <h3>Subtotal: ${quantity*price}</h3>
+                        <p>{description}</p>
+                    </div>
+                    <button className="buttonCartInfo" onClick={deleteProduct}><DeleteIcon/></button>
                 </div> 
-                <button className="buttonCart" onClick={deleteProduct}><DeleteIcon/></button>
             </div>
         </>
     )

@@ -4,12 +4,12 @@ const CartContext = createContext();
 
 const CartProvider = ({children}) => {
     const [cartProducts, setCartProducts] = useState([])
-    const [subTotal, setSubTotal] = useState(0)
     const [total , setTotal] = useState(0)
     const getId = (id) => cartProducts.find(e => e.id === id) || null; //si en el array cartProducts se encuentra un e que tenga un id igual que el id, entonces null para no dejar que se agregue al carrito dos veces.
 
     const addProductToCart = (product, quantity) => {
         if(!getId(product.id)){
+            setTotal(total + (product.price*quantity))
             product.quantity = quantity
             setCartProducts(cartProducts => [...cartProducts, product])
         }else{
@@ -17,7 +17,6 @@ const CartProvider = ({children}) => {
             return false
             const total = getId(product.id).quantity += quantity
         }
-        setSubTotal (subTotal + quantity)
         return true
     }
 
@@ -27,21 +26,14 @@ const CartProvider = ({children}) => {
 
     const clear = () => {
         setCartProducts([])
-    }
-
-    const totalCartItem = () =>{
-        let total = 0
-        cartProducts.map((cartProduct)=>{
-            total = (cartProduct.price * cartProduct.quantity) + total
-        })
-        return total
+        setTotal(0)
     }
 
     const cartData = {
         cartProducts,
         addProductToCart,
         deletFromCart,
-        totalCartItem,
+        total,
         clear
     }
     return(

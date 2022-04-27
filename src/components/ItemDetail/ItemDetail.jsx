@@ -6,12 +6,10 @@ import './ItemDetail.css'
 const ItemDetail = ({data}) => {
     const {title, description, image, price, stock} = data;
     const {addProductToCart} = useContext(CartContext)
-    console.log(data)
     //funcion del padre ejecutada por el hijo
     const onAdd = (quantity) =>{
         // setQuantityCart(quantity)
         addProductToCart(data, quantity)
-        console.log("cantidad agregada: ", quantity)
     }
     /////////////////////////////////////////
     return(

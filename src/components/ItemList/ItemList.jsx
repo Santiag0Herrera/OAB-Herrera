@@ -3,18 +3,19 @@ import Card from '../Item/Item';
 
 /////////////// FIREBASE //////////////////////////////////////
 import db from '../../firebase'
-import { collection, getDocs } from 'firebase/firestore';
+import { collection, getDocs, query, where } from 'firebase/firestore';
 ///////////////////////////////////////////////////////////////
+
 import './ItemList.css';
 import { useParams } from 'react-router-dom';
 
-const ItemList = ({children}) => {  
+const ItemList = () => {  
     const { category } = useParams()
 
     const [loading, setLoading] = useState(true)
 
     const [products, setProducts] = useState([]);
-    const getProducts = async () => {
+    const getProducts = async () => {        
         const itemsCollection = collection(db, 'Catalog');
         const productosSnapshot = await getDocs(itemsCollection);
         const productList = productosSnapshot.docs.map( (doc) => {
@@ -29,14 +30,15 @@ const ItemList = ({children}) => {
     useEffect( () => {
         setProducts([])
         setLoading(true)
-        console.log(category)
         getProducts().then( (productos) => {
                 setLoading(false)
-                console.log(productos)
                 category ? filterProductByCategory(productos, category) : setProducts(productos)
         })
     },[category]);
 
+    ////////////////FILTRADO CON FIREBASE//////////////////
+    //para que directamente firebase nos traiga los productos filtrados, podemos usar: const itemsCollection = query(collection(db, 'Catalog'), where("category", "==", "electricos" )); y treaerá todos los productos que tengan la propiedad "category" == a "electricos".
+    //////////////////////////////////////////////////////
     const filterProductByCategory = (array, category) => {
         return array.map ((product, i) => {
             if(product.category === category) {
@@ -44,15 +46,13 @@ const ItemList = ({children}) => {
             }
         })
     }
-
-    //como modificamos un state, el return se vuelve a renderizar ya con el "{console.log("Products: ", dataProducts)}" lleno con los objetos del array ItemList.
     return(
         <div className='productList'>
             {
-                loading ? //Condicional: condicion "loading" o "loading === 'true' " implica si existe o si su valor es "true"
-                (<div className="spinner"></div>)// a ejecutar en caso de verdadera la condicion
+                loading ?
+                (<div className="spinner"></div>)
                 :
-                (<div className="catalog"> {products.map((product) => <Card data={product} key={product.id} />)}</div>)// a ejecutar en caso de falsa la condicion
+                (<div className="catalog"> {products.map((product) => <Card data={product} key={product.id} />)}</div>)
             }
         </div>
     )
