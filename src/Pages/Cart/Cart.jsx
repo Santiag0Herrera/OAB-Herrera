@@ -73,7 +73,7 @@ const [successOrder, setSuccessOrder] = useState()
                 cartProducts.length === 0
                 ?(<>
                     <div className='quantityButton'>
-                        <h4 style={{color: "white"}}>Tu carrito esta vacio</h4>
+                        <h4 style={{color: "#6b63ff"}}>Tu carrito esta vacio</h4>
                         <Link to={'/'}><button className='buttonCart'>+ PRODUCTOS</button></Link>
                     </div>
                 </>)

@@ -5,3 +5,13 @@
     z-index: 1000;
     background-color: #292929;
 }
+
+:root{
+    --principalColor: #6C63FF;
+    --secundaryColor: #7066FF;
+}
+
+/*
+Color principal:
+#6C63FF 
+*/

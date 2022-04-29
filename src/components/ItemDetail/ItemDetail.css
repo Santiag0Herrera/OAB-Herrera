@@ -5,7 +5,7 @@
     align-content: center;
     justify-content: center;
     align-items: stretch;
-    background-color: rgb(66, 66, 66);
+    background-color: #6C63FF;
     border-radius: 10px;
     box-shadow: 5px 5px 6px #00000066;
     margin: 10px;
@@ -76,7 +76,7 @@
 .ContainerDetail{
     display: flex;
     justify-content: center;
-    margin: 50px 0px;
+    margin: 150px 0px;
 }
 
 .quantities button{
@@ -99,4 +99,5 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    max-width: 250px;
 }

@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 //Pages
+import Category from "./Pages/Category/Category"
 import HomePage from "./Pages/Home/Home";
 import ErrorPage from "./Pages/Error/Error404";
 import Info from "./Pages/Info/Info";
@@ -25,7 +26,7 @@ const App= () => {
           <Route path="/info" element ={<Info/>}/>
           <Route path="/cart" element ={<Cart/>}/>
           <Route path="/Item/:id" element ={<Productos/>}/>
-          <Route path="/:category/" element ={<HomePage/>}/>
+          <Route path="/:category/" element ={<Category/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>

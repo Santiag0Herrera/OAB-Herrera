@@ -1,3 +1,8 @@
+
+/*
+Color principal:
+#6C63FF 
+*/
 .header{
     width: 100%;
     display: flex;
@@ -9,10 +14,13 @@
     justify-content: space-between;
     padding: 0px 0px;
     position: fixed;
-    background: linear-gradient(180deg, rgba(29,29,29,1) 0%, rgba(29,29,29,0.5) 66%, rgba(29,29,29,0) 100%);
+    background-color: #6b63ff ;
     z-index: 1000;
     margin: 0px;
+    backdrop-filter: blur(5px);
+    top: 0;
 }
+
 
 .header li{
     display: flex;
@@ -27,10 +35,6 @@
 a{
     color: white;
     text-decoration: none;
-}
-
-a:hover{
-    color: rgb(80, 80, 80);
 }
 
 h1{
@@ -56,6 +60,14 @@ img{
     display: flex !important;
 }
 
+.CartWidgetIcon:hover{
+    color: #4238fd;
+}
+
+.InfoWidgetIcon:hover{
+    color: #4238fd;
+}
+
 .CartWidgetIcon p{
     display: flex;
     margin: 0px;
@@ -78,5 +90,10 @@ img{
 }
 
 .Home{
-    font-size: 50px !important;
+    font-size: 20px !important;
 }
+
+.Home:hover{
+    color: #4238fd;
+}
+
