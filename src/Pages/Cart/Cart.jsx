@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import CartContext from "../../context/CartContext";
 import CartProductCard from "./cartProducts";
 import ModalCustom from "../../components/Modal/Modal";
+import cartImage from "../../SVGs/cart.svg"
 import { Link } from "react-router-dom";
 //Style
 import './Cart.css';
@@ -68,7 +69,16 @@ const [successOrder, setSuccessOrder] = useState()
 ///////////////////////////////////////////////////////////////
 
     return(
-        <>  <h3>Tu carrito</h3>
+        <>  
+        <div className='startImage'>
+            <div className='MainTitleContent'>
+                <h1>Tu carrito</h1>
+            </div>
+            <div className='ilustration'>
+                <img src={cartImage} className="ilustration"></img>
+            </div>
+        </div>
+            
             {
                 cartProducts.length === 0
                 ?(<>

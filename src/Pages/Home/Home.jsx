@@ -1,6 +1,6 @@
 import React from "react";
 import ItemListContainer from "../../components/ItemListContainer/ItemListContainer";
-import home from "../../SVGs/home.svg" 
+import home from "../../SVGs/home2.svg" 
 import { Link } from "react-router-dom";
 import './Home.css';
 

@@ -8,13 +8,13 @@
 }
 
 .productList{
-    margin: 5px;
+        margin: 5px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-around;
-    align-items: stretch;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
@@ -31,6 +31,10 @@
 }
 
 .spinner {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
     margin-bottom: 10%;
     position: relative;
     width: 60px;

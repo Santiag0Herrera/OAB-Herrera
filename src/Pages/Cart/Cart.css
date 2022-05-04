@@ -6,7 +6,7 @@
     justify-content: flex-start;
     align-items: center;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 11px;
     background-color: rgb(66, 66, 66);
     width: 80%;
     height: 250px !important;
@@ -98,6 +98,14 @@ h4{
     width: 100%;
     align-content: center;
     flex-wrap: wrap;
+}
+
+a{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center; display: flex;
+    width: 100%;
 }
 
 .buttonCart{
@@ -268,6 +276,7 @@ h4{
 
 .cartResumeDetail h3{
     margin: 0px !important;
+    color: #6C63FF !important;
 }
 
 .modalForm p{
