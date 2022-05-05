@@ -39,33 +39,39 @@
 }
 
 .icons a{
-    margin: 10px;
+    margin: 5px;
     list-style: none;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     align-content: center;
-    align-items: flex-start
+    align-items: flex-start;
+    color: white;
 }
 
 .icons h4{
     font-size: 20px;
     color: #6b63ff;
+    margin-bottom: 10px;
+    text-decoration: underline;
 }
 
 .pages h4{
     font-size: 20px;
     color: #6b63ff;
+    margin-bottom: 10px;
+    text-decoration:underline;
 }
 
 .pages a{
-    margin: 10px;
+    margin: 5px;
     list-style: none;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     align-content: center;
     align-items: flex-end;
+    color: white;
 }
 
 .logos{

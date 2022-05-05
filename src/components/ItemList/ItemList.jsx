@@ -40,8 +40,9 @@ const ItemList = () => {
     //para que directamente firebase nos traiga los productos filtrados, podemos usar: const itemsCollection = query(collection(db, 'Catalog'), where("category", "==", "electricos" )); y treaerá todos los productos que tengan la propiedad "category" == a "electricos".
     //////////////////////////////////////////////////////
     const filterProductByCategory = (array, category) => {
-        return array.map ((product, i) => {
+        return array.map ((product) => {
             if(product.category === category) {
+                console.log(category, product.category)
                 return setProducts(products => [...products, product])
             }
         })

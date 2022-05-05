@@ -10,22 +10,19 @@
     background-color: rgb(66, 66, 66);
     width: 80%;
     height: 250px !important;
-    color: white;
+    color: white !important;
     box-shadow: 5px 5px 6px #00000066;
-    transition: background-color 0.2s, box-shadow 0.2s;
+    transition: all 0.5s;
 }
 
 .ArticulosCart:hover{
-    background-color: rgb(81, 81, 81);
-    box-shadow: 1px 1px 15px #ffffff !important;
+    background-color: white;
+    box-shadow: 1px 1px 10px #6C63FF !important;
+    color: #292929 !important;
 }
 
-h3{
-    display: flex;
-    color: white !important;
-    justify-content: center;
-    margin: 25px !important;
-    font-size: 30px;
+.ArticulosCart:hover a{
+    color: #292929 !important;
 }
 
 h4{
@@ -120,7 +117,7 @@ a{
     border-width: 2px !important;
     border-color: rgba(255, 255, 255, 0.278) !important;
     font-size: larger !important;
-    transition: width 0.5s, background-color 0.5s, box-shadow 0.5s !important;
+    transition: all 0.5s !important;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -130,23 +127,21 @@ a{
 
 .buttonCart:hover{
     cursor: pointer !important;
-    background-color: white !important;
-    box-shadow: 1px 1px 15px #ffffff !important;
-    color: #292929 !important;
+    background-color: #6C63FF !important;
+    box-shadow: 1px 1px 10px #6C63FF !important;
+    color: white !important;
 }
 
 .buttonCartInfo{
     padding: 0px !important;
-    color: rgba(255, 255, 255, 0.278) !important;
-    background-color: #292929;
+    color: #404040 !important;
+    background-color: white;
     width: 100px;
     height: 250px !important;
     border-radius: 0px 5px 5px 0px !important;
-    border-width: 2px !important;
-    border-color: rgba(255, 255, 255, 0.278) !important;
-    border-style: solid;
+    border-style: none;
     font-size: larger !important;
-    transition: width 0.5s, background-color 0.5s, box-shadow 0.5s !important;
+    transition: all 0.5s !important;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -156,9 +151,9 @@ a{
 
 .buttonCartInfo:hover{
     cursor: pointer !important;
-    background-color: white !important;
-    box-shadow: 1px 1px 15px #ffffff !important;
-    color: #292929 !important;
+    background-color: #6C63FF !important;
+    box-shadow: 1px 1px 10px #6C63FF !important;
+    color: white !important;
 }
 
 .MuiPaper-root{
