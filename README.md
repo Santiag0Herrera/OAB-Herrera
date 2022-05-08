@@ -1,7 +1,7 @@
 # *OAB E-commerce*
-## *Documentation for developers*
+## Documentation for developers
 ### General Info
-OAB, or Oscar Alberto Bianchi, is an e-commerce web app which offers the user an interface that is pleasing to the eye and simple to use, as well as an optimized operation and rapid response. This app is a 100% hand made by Santiago Herrera, CoderHouse Front-End student. It´s a React.js programmed web site connected to Google FireBase and hosted at Google Firebase Hosting.
+OAB, or Oscar Alberto Bianchi, is an e-commerce web app which offers the user an interface that is pleasing to the eye and simple to use, as well as an optimized operation and rapid response. This app is a 100% hand made by Santiago Herrera, CoderHouse Front-End student. It´s a React.js and CSS3 programmed web site connected to Google FireBase and hosted at Google Firebase Hosting.
 
 ### Main Dependencies
 | Dependency | Version | Use/Not |
@@ -22,9 +22,27 @@ OAB, or Oscar Alberto Bianchi, is an e-commerce web app which offers the user an
 | react-scripts | 5.0.0 | Used |
 | sass | 1.49.9 | Not Used |
 | web-vitals| 2.1.4 | Used |
+
 ### DataBase
 ##### *[By Google Firebase](https://firebase.google.com/?hl=es-419&gclid=Cj0KCQjwsdiTBhD5ARIsAIpW8CKOs12xLfWTHHZpX_QNoCgrNq_3L9DATS2I2zktj5Q87aNOUi0Qj_YaAn_kEALw_wcB&gclsrc=aw.ds)*
 Firebase is an app development platform that helps you build and grow apps and games users love. Backed by Google and trusted by millions of businesses around the world.
 
+### Web App Status:
+Still in process.
 
-### *Special Thanks*
+### How to initiate?
+1. Install all dependencies and React.
+1. Install and run [Node.js](https://nodejs.org/en/) and [Git](https://git-scm.com/).
+1. Open [VisualStudioCode](https://code.visualstudio.com/) and type on a new terminal:
+  ```
+  PS C:\yourFolderDirection> git pull https://github.com/Santiag0Herrera/OAB-Herrera
+  ```
+  Then, on a new terminal...
+  ```
+  PS C:\yourFolderDirection>npm start
+  ```
+
+### Special Thanks
+- Tutor: ***Anyel Lopez***
+- Teacher: ***Christian Ortiz***
+- Insitution: ***CoderHouse***
